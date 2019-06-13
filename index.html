@@ -11,21 +11,22 @@
 </head>
 
 <body>
-    <input id="url" class="center" onchange="verify()" type="text">
-    <button onclick="ajax_request()">Enviar</button>
+    <div class="center" style="text-align: center; width: 50%;">
+    <input id="url" class="center biggerfont" onchange="verify()" type="text" placeholder="Introduce link del video" >
+    <button id="chg" class="biggerfont" onclick="ajax_request()" >Enviar</button>
+    </div>
     <h1 id="title"></h1>
-    <div id="content"></div>
-    <div id="content2"></div>
+   
     <div id="content3"></div>
     <video id=example-video width=960 height=540 class="video-js vjs-default-skin center" controls>
-  <source
-     src="https://miteleooyala-vh.akamaihd.net/i/9yOXl4aDE6bYacKb5FtcCbYZUmNI96SY/,DOcJ-FxaFrRg4gtDEwOjFsaTowODE7WX,DOcJ-FxaFrRg4gtDEwOm84OjBrOz0bxa,DOcJ-FxaFrRg4gtDEwOjEwYjowODE7je,DOcJ-FxaFrRg4gtDEwOjJjcTowODE7R4,.csmil/index_2_av.m3u8?null=0&hdntl=exp=1560305295~acl=%2fi%2f9yOXl4aDE6bYacKb5FtcCbYZUmNI96SY%2f,DOcJ-FxaFrRg4gtDEwOjFsaTowODE7WX,DOcJ-FxaFrRg4gtDEwOm84OjBrOz0bxa,DOcJ-FxaFrRg4gtDEwOjEwYjowODE7je,DOcJ-FxaFrRg4gtDEwOjJjcTowODE7R4,.csmil%2f*~data=hdntl~hmac=0c5d6b0d7ef48605be0df09516f7dae3c15d3a12409b36de92f5cc0de5e23bb6"
-     type="application/x-mpegURL">
-</video>
-<script src="src/videojs-contrib-hls.min.js"></script>
- <script src='https://vjs.zencdn.net/7.5.4/video.js'></script>
-<script>
-var player = videojs('example-video');
-player.play();
-</script>
+        <source id="videosrc" src="https://miteleooyala-vh.akamaihd.net/i/M0Ynh4aDE6coYQ5ghfx2Ekje1vFYGoBk/,DOcJ-FxaFrRg4gtDEwOjFsaTowODE7WX,DOcJ-FxaFrRg4gtDEwOm84OjBrOz0bxa,DOcJ-FxaFrRg4gtDEwOjEwYjowODE7je,DOcJ-FxaFrRg4gtDEwOjJjcTowODE7R4,.csmil/index_2_av.m3u8?null=0&hdntl=exp=1560305295~acl=%2fi%2f9yOXl4aDE6bYacKb5FtcCbYZUmNI96SY%2f,DOcJ-FxaFrRg4gtDEwOjFsaTowODE7WX,DOcJ-FxaFrRg4gtDEwOm84OjBrOz0bxa,DOcJ-FxaFrRg4gtDEwOjEwYjowODE7je,DOcJ-FxaFrRg4gtDEwOjJjcTowODE7R4,.csmil%2f*~data=hdntl~hmac=0c5d6b0d7ef48605be0df09516f7dae3c15d3a12409b36de92f5cc0de5e23bb6" type="application/x-mpegURL">
+    </video>
+    <script src="src/videojs-contrib-hls.min.js"></script>
+    <script src='https://vjs.zencdn.net/7.5.4/video.js'></script>
+    <script>
+        var player = videojs('example-video');
+        player.play();
+    </script>
+     <div id="content"></div>
+    <div id="content2"></div>
 </body></html>
