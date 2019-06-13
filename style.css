@@ -2,9 +2,12 @@
 body{background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);}
 #title{text-align: center;color: #fff;letter-spacing: 3px;}
 .center{margin: 0 auto;}
+.centertext{text-align: center}
 .biggerfont{font-size: 18px;}
+.white{color:#fff}
 #url{background-color: transparent;outline: none;border: none; border-bottom: 5px solid white;color: #fff;width: 60%;}
 #chg{background-color: transparent;outline:none;border:none;border-bottom: 5px solid white;color:#ccc;width: 10%}
 #url:hover{}
 #chg:hover{color:#fff;}
 ::placeholder{color:#ccc;}
+
