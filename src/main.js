@@ -4,7 +4,7 @@ function ajax_request() {
     if (hostname=="www.atresplayer.com" ){
         var id = url.substr(url.length - 25);
       $.ajax({
-        url: "https://bypasscors.herokuapp.com/api/?url=https://api.atresplayer.com/client/v1/player/video/" + id,
+        url: "https://api.atresplayer.com/client/v1/player/video/" + id,
         type: 'GET',
         dataType: 'json',
         success: function (data) {
