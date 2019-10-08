@@ -8,8 +8,8 @@ function ajax_request() {
         type: 'GET',
         dataType: 'json',
         success: function (data) {
-            console.log(JSON.stringify(data.sources[0].src));
-            player.src(JSON.stringify(data.sources[0].src));
+          var source = JSON.stringify(data.sources[0].src);
+            player.src(decodeURI(source).replace(/["']/g, ""));
             
             
             
