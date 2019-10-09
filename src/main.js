@@ -4,9 +4,9 @@ function ajax_request() {
     if (hostname=="www.atresplayer.com" ){
         var id = url.substr(url.length - 25);
       $.ajax({
-        url: "https://jsonp.afeld.me/?url=https://api.atresplayer.com/client/v1/player/video/" + id,
+        url: "https://api.atresplayer.com/client/v1/player/video/" + id,
         type: 'GET',
-        dataType: 'json',
+        dataType: 'jsonp',
         success: function (data) {
           var source = JSON.stringify(data.sources[0].src);
             player.src(decodeURI(source).replace(/["']/g, ""));
